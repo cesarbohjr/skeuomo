@@ -1,0 +1,6 @@
+touch requirements.txt
+tensorflow
+torch
+opencv-python
+scikit-learn
+spacy
