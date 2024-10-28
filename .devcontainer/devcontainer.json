@@ -1,0 +1,21 @@
+{
+    "name": "Skeuomo Development Environment",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+    "features": {
+      "docker-in-docker": "latest",
+      "github-cli": "latest",
+      "python": "latest"
+    },
+    "postCreateCommand": "npm install && python -m venv ai_env && . ai_env/bin/activate && pip install -r requirements.txt",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode",
+          "ms-python.python",
+          "ms-azuretools.vscode-docker"
+        ]
+      }
+    }
+  }
+  
